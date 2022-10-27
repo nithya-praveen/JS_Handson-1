@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .qst
+        {
+            color: blue;
+        }
+        .ans
+        {
+            color:rgb(149, 4, 4);
+        }
+    </style>
+</head>
+<body>
+    <b class="qst">Q1.</b>
+        <b class="ans">Add two Numbers.
+        You are provided with two numbers A and B.Your task is to add these two numbers.</b> <br> <br>
+    <b class="qst">A2.</b> const AddTwoNumbers = (a,b) => <br>
+            {<br>
+                return a+b; <br>
+            }; <br><br>
+    <b class="qst">Q2.</b>
+        <b class="ans">Find if the conditions are obeyed or not?
+        You are given two number first as A and second as B and check if both conditions (A<10 and A>B) 
+        are satisfied or not with the help of operators.</b>
+         <br> <br>
+    <b class="qst">A2.</b> const Is_Valid = (a,b) => <br>
+    { <br>
+        if(a<10 && a>b) <br>
+          return true; <br>
+        else <br>
+          return false; <br>
+    };<br> <br>
+    <b class="qst">Q3.</b>
+        <b class="ans">Check the conditons.
+        You are given two numbers A and B.You need to do the following checks:
+        1.if both are divisible by 10 console true.
+        2.if both are not divisible by 10 console false.
+        3.if one of them only is divisible by 10 console true.
+        Use operator to do this</b>.</b> <br> <br>
+    <b class="qst">A3.</b> const Check = (A, B) => <br>
+            { <br>
+                if((A,B)%10===0) <br>
+                return true; <br>
+                else if((A%10)===0 || (B%10)===0) <br>
+                return true; <br>
+                else <br>
+                return false; <br>
+            }; <br> <br>
+    <b class="qst">Q4.</b>
+        <b class="ans">Find the first digit of a 4 digit number.
+        You are provided a four digit number N only. Your task is to print out the first digit of that number.</b> <br> <br>
+    <b class="qst">A4.</b> const First_Digit = (n) =>  <br>
+            { <br>
+                while(n>=10) <br>
+                { <br>
+                    n/=10; <br>
+                } <br>
+                return Math.floor(n); <br>
+            }; <br><br>
+    <b class="qst">Q5.</b>
+        <b class="ans">Find the Last digit of a 4 digit number.
+        You are provided a four digit number N only. Your task is to print out the last digit of that number.</b> <br> <br>
+    <b class="qst">A5.</b> const Last_Digit = (n) =>  <br>
+             { <br>
+                while(n>=10) <br>
+                { <br>
+                    n%=10; <br>
+                } <br>
+                return Math.floor(n); <br>
+            }; <br><br>
+    <b class="qst">Q6.</b>
+        <b class="ans">Find the remainder.
+        You are provided with two numbers A and B where A as  divisor and B as dividend.Your task is to 
+        find the remainder.</b> <br> <br>
+    <b class="qst">A6.</b> const Find_the_remainder = (a,b) => <br>
+            { <br>
+                var c=b%a; <br>
+                return c; <br>
+            }; <br> <br>
+    <b class="qst">Q7.</b>
+        <b class="ans">Multipy two Numbers. 
+        You are provided with two numbers A and B. Your task is to multiply these two numbers.</b> <br> <br>
+    <b class="qst">A7.</b> const Multiply_two_number = (a,b) => <br>
+            { <br>
+                c=a*b; <br>
+                return c; <br>
+            }; <br><br>
+    <b class="qst">Q8.</b>
+        <b class="ans">Marks Calculator.
+        Shyam has got his marks in three subjects as A,B and C(out of 100).Write a program to calculate his total 
+        marks and his average.</b> <br><br>
+    <b class="qst">A8.</b> const Sum = (A, B, C) => <br>
+            { <br>
+                const sum = A+B+C; <br>
+                return sum; <br>
+            }; <br>
+            const Average = (A, B, C) => <br>
+            { <br>
+                const Avg=(A+B+C)/3; <br>
+                return Avg; <br>
+            }; <br>
+</body>
+</html>
